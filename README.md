@@ -11,7 +11,7 @@ conda create --name cbrf python=3.7
 
 conda activate cbrf
 
-2)pip install -r requirements.txt
+5)pip install -r requirements.txt
 
 The pretrained TransE and CBRF models are available and can be downloaded from the following links:
 https://drive.google.com/file/d/1bIk5VMAIWCO2s2nw_Z8of8xCNN6NyXrU/view?usp=sharing
