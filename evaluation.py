@@ -108,18 +108,17 @@ f = open("Evaluation.txt", "w")
 
 f.write("Hit 1 Random Forest:" )
 f.write(str(true_rf1/number_of_test_triple))
-f.write("Hit 1 TransE:\n" )
+f.write("Hit 1 TransE:" )
 f.write(str(true_te1/number_of_test_triple))
 
-f.write("Hit 3 Random Forest:\n" )
+f.write("Hit 3 Random Forest:" )
 f.write(str(true_rf/number_of_test_triple))
-f.write("Hit 3 TransE:\n" )
+f.write("Hit 3 TransE:" )
 f.write(str(true_te/number_of_test_triple))
 
-f.write("Hit 10 Random Forest:\n" )
+f.write("Hit 10 Random Forest:" )
 f.write(str(true_rf10/number_of_test_triple))
-f.write("Hit 10 TransE:\n" )
+f.write("Hit 10 TransE:" )
 f.write(str(true_te10/number_of_test_triple))
 
 f.close()
-
