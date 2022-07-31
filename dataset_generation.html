@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module dataset_generation</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>dataset_generation</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/data/s6jetraj/Development/TEST/CBRF-FB13-/dataset_generation.py">/data/s6jetraj/Development/TEST/CBRF-FB13-/dataset_generation.py</a></font></td></tr></table>
+    <p><tt>@author:&nbsp;Jelena&nbsp;Trajkovic<br>
+&nbsp;<br>
+This&nbsp;python&nbsp;file&nbsp;is&nbsp;used&nbsp;for&nbsp;preprocessing&nbsp;of&nbsp;ground&nbsp;truth(training)&nbsp;dataset.<br>
+If&nbsp;You&nbsp;want&nbsp;to&nbsp;generate&nbsp;the&nbsp;new&nbsp;dataset&nbsp;with&nbsp;negatives,&nbsp;uncomment&nbsp;the&nbsp;last&nbsp;<br>
+4&nbsp;lines&nbsp;and&nbsp;run&nbsp;python&nbsp;dataset_generation.py</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="copy.html">copy</a><br>
+<a href="csv.html">csv</a><br>
+</td><td width="25%" valign=top><a href="numpy.html">numpy</a><br>
+<a href="pandas.html">pandas</a><br>
+</td><td width="25%" valign=top><a href="random.html">random</a><br>
+<a href="train_model.html">train_model</a><br>
+</td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#eeaa77">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt><a name="-Corrupt"><strong>Corrupt</strong></a>(triple, dataset, model)</dt><dd><tt>returns&nbsp;the&nbsp;negative&nbsp;triple&nbsp;obtained&nbsp;from&nbsp;the&nbsp;positive&nbsp;triple&nbsp;at&nbsp;hand&nbsp;at&nbsp;the&nbsp;following&nbsp;way:<br>
+corrupt&nbsp;the&nbsp;triple&nbsp;by&nbsp;randomly&nbsp;replacing&nbsp;head/tail&nbsp;with&nbsp;head/tail&nbsp;which&nbsp;differs&nbsp;from&nbsp;the&nbsp;given,<br>
+and&nbsp;is&nbsp;chosen&nbsp;among&nbsp;the&nbsp;heads/tails&nbsp;which&nbsp;can&nbsp;be&nbsp;found&nbsp;at&nbsp;the&nbsp;left/right&nbsp;hand&nbsp;side&nbsp;of&nbsp;the&nbsp;<br>
+given&nbsp;relation.</tt></dd></dl>
+ <dl><dt><a name="-create_dataset_with_negatives"><strong>create_dataset_with_negatives</strong></a>(dataset, model)</dt><dd><tt>generates&nbsp;dataset&nbsp;with&nbsp;negatives.</tt></dd></dl>
+ <dl><dt><a name="-read_dataset_with_negatives"><strong>read_dataset_with_negatives</strong></a>()</dt><dd><tt>read&nbsp;dataset&nbsp;with&nbsp;negatives.</tt></dd></dl>
+</td></tr></table>
+</body></html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module calculate_variance</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>calculate_variance</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/data/s6jetraj/Development/TEST/CBRF-FB13-/calculate_variance.py">/data/s6jetraj/Development/TEST/CBRF-FB13-/calculate_variance.py</a></font></td></tr></table>
+    <p><tt>@author:&nbsp;Jelena&nbsp;Trajkovic<br>
+&nbsp;<br>
+This&nbsp;file&nbsp;contains&nbsp;methods&nbsp;which&nbsp;are&nbsp;responsable&nbsp;for&nbsp;neighbourhood&nbsp;definition.</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="numpy.html">numpy</a><br>
+</td><td width="25%" valign=top><a href="prepare_centroids.html">prepare_centroids</a><br>
+</td><td width="25%" valign=top><a href="random_forest_model.html">random_forest_model</a><br>
+</td><td width="25%" valign=top><a href="train_model.html">train_model</a><br>
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#eeaa77">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt><a name="-calculate_standard_deviation"><strong>calculate_standard_deviation</strong></a>(head, rel, tail, dataset, model, random_forest)</dt><dd><tt>in&nbsp;order&nbsp;to&nbsp;decide&nbsp;how&nbsp;much&nbsp;noise&nbsp;we&nbsp;are&nbsp;adding&nbsp;to&nbsp;the&nbsp;head&nbsp;entity,&nbsp;we&nbsp;are&nbsp;taking<br>
+the&nbsp;standard&nbsp;deviation&nbsp;of&nbsp;all&nbsp;of&nbsp;the&nbsp;existing&nbsp;heads&nbsp;in&nbsp;the&nbsp;dataset,&nbsp;for&nbsp;which&nbsp;it<br>
+holds&nbsp;that&nbsp;they&nbsp;have&nbsp;the&nbsp;same&nbsp;tail.</tt></dd></dl>
+ <dl><dt><a name="-calculate_standard_deviation_all_tails"><strong>calculate_standard_deviation_all_tails</strong></a>(head, rel, tail, dataset, model, random_forest)</dt><dd><tt>in&nbsp;order&nbsp;to&nbsp;decide&nbsp;how&nbsp;much&nbsp;noise&nbsp;we&nbsp;are&nbsp;adding&nbsp;to&nbsp;the&nbsp;head&nbsp;entity,&nbsp;we&nbsp;are&nbsp;taking<br>
+the&nbsp;standard&nbsp;deviation&nbsp;of&nbsp;all&nbsp;of&nbsp;the&nbsp;existing&nbsp;heads&nbsp;in&nbsp;the&nbsp;dataset,&nbsp;for&nbsp;which&nbsp;it<br>
+holds&nbsp;that&nbsp;they&nbsp;have&nbsp;the&nbsp;same&nbsp;tail&nbsp;as&nbsp;tails&nbsp;predicted&nbsp;by&nbsp;the&nbsp;model&nbsp;for&nbsp;the&nbsp;given<br>
+&lt;head,&nbsp;rel&gt;&nbsp;pair.<br>
+REMARK:&nbsp;this&nbsp;method&nbsp;is&nbsp;given&nbsp;as&nbsp;a&nbsp;suggestion,&nbsp;it&nbsp;is&nbsp;not&nbsp;used&nbsp;in&nbsp;the&nbsp;pipeline&nbsp;implementation.</tt></dd></dl>
+</td></tr></table>
+</body></html>
