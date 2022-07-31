@@ -3,9 +3,9 @@ In order to run the python files present in this project, You have to do the fol
 
 1)Clone the repository
 
-2)If You want to use pretrained model, You have to download corresponding files given bellow
+3)If You want to use pretrained model, You have to download corresponding files given bellow
 
-1)Create the new environment by using: 
+4)Create the new environment by using: 
 
 conda create --name cbrf python=3.7
 
