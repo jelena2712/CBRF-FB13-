@@ -55,10 +55,10 @@ for i in range(len(test_true)):
         print("Current RandomF:")
         print(randomf)
 
-print("TransE:/n")    
-print(transe/num + "/n")
-print("RandomF:/n")
-print(randomf/num + "/n")  
+print("TransE:")    
+print(transe/num)
+print("RandomF:")
+print(randomf/num)  
 
 
 f = open("Support.txt", "w")

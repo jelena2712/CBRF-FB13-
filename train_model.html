@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module train_model</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>train_model</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/data/s6jetraj/Development/TEST/CBRF-FB13-/train_model.py">/data/s6jetraj/Development/TEST/CBRF-FB13-/train_model.py</a></font></td></tr></table>
+    <p><tt>@author:&nbsp;Jelena&nbsp;Trajkovic<br>
+&nbsp;<br>
+This&nbsp;python&nbsp;file&nbsp;is&nbsp;used&nbsp;for&nbsp;training&nbsp;TransE&nbsp;model&nbsp;<br>
+on&nbsp;FB13&nbsp;test&nbsp;dataset.&nbsp;Pretrained&nbsp;model&nbsp;is&nbsp;available&nbsp;(README.md).<br>
+If&nbsp;You&nbsp;want&nbsp;to&nbsp;retrain&nbsp;the&nbsp;model,&nbsp;uncomment&nbsp;the&nbsp;last&nbsp;two&nbsp;lines,&nbsp;and&nbsp;<br>
+run&nbsp;python&nbsp;train.py&nbsp;via&nbsp;command&nbsp;line.</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="numpy.html">numpy</a><br>
+</td><td width="25%" valign=top><a href="pandas.html">pandas</a><br>
+</td><td width="25%" valign=top></td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#eeaa77">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt><a name="-entities_and_relations"><strong>entities_and_relations</strong></a>(dataset)</dt><dd><tt>return&nbsp;the&nbsp;unique&nbsp;entities&nbsp;and&nbsp;relations&nbsp;tha&nbsp;dataset&nbsp;consists&nbsp;of</tt></dd></dl>
+ <dl><dt><a name="-load_dataset"><strong>load_dataset</strong></a>()</dt><dd><tt>#load&nbsp;dataset&nbsp;FB13</tt></dd></dl>
+ <dl><dt><a name="-load_test_dataset"><strong>load_test_dataset</strong></a>()</dt><dd><tt>#load&nbsp;test&nbsp;dataset&nbsp;FB13</tt></dd></dl>
+ <dl><dt><a name="-load_valid_dataset"><strong>load_valid_dataset</strong></a>()</dt><dd><tt>#load&nbsp;validation&nbsp;dataset&nbsp;FB13</tt></dd></dl>
+ <dl><dt><a name="-restore_TransE"><strong>restore_TransE</strong></a>()</dt><dd><tt>restore&nbsp;trained&nbsp;TransE&nbsp;model</tt></dd></dl>
+ <dl><dt><a name="-train_model"><strong>train_model</strong></a>(X)</dt><dd><tt>trian&nbsp;TransE&nbsp;model</tt></dd></dl>
+ <dl><dt><a name="-unique_numbers_for_entities_and_relations"><strong>unique_numbers_for_entities_and_relations</strong></a>(dataset)</dt><dd><tt>return&nbsp;the&nbsp;dictionaries&nbsp;of&nbsp;entities&nbsp;and&nbsp;relations&nbsp;needed&nbsp;for&nbsp;generation&nbsp;of&nbsp;unique&nbsp;centroids</tt></dd></dl>
+ <dl><dt><a name="-uniques_entities_left_right"><strong>uniques_entities_left_right</strong></a>(dataset)</dt><dd><tt>return&nbsp;the&nbsp;dictionaties&nbsp;of&nbsp;the&nbsp;unique&nbsp;entities&nbsp;left&nbsp;and&nbsp;right&nbsp;from&nbsp;the&nbsp;relationf</tt></dd></dl>
+</td></tr></table>
+</body></html>

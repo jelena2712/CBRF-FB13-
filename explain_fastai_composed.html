@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module explain_fastai_composed</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>explain_fastai_composed</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/data/s6jetraj/Development/TEST/CBRF-FB13-/explain_fastai_composed.py">/data/s6jetraj/Development/TEST/CBRF-FB13-/explain_fastai_composed.py</a></font></td></tr></table>
+    <p><tt>@author:&nbsp;Jelena&nbsp;Trajkovic<br>
+&nbsp;<br>
+This&nbsp;file&nbsp;containsthe&nbsp;method&nbsp;for&nbsp;explanations&nbsp;generation&nbsp;by&nbsp;using&nbsp;CBRF&nbsp;model.<br>
+It&nbsp;contains&nbsp;additional&nbsp;methods&nbsp;for&nbsp;feature&nbsp;selection,&nbsp;generationg&nbsp;the&nbsp;samples&nbsp;<br>
+around&nbsp;the&nbsp;head&nbsp;embedding...</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="calculate_variance.html">calculate_variance</a><br>
+<a href="numpy.html">numpy</a><br>
+</td><td width="25%" valign=top><a href="prepare_centroids.html">prepare_centroids</a><br>
+<a href="pandas.html">pandas</a><br>
+</td><td width="25%" valign=top><a href="pickle.html">pickle</a><br>
+<a href="random.html">random</a><br>
+</td><td width="25%" valign=top><a href="random_forest_model.html">random_forest_model</a><br>
+<a href="train_model.html">train_model</a><br>
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#eeaa77">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt><a name="-delete_multiple_element"><strong>delete_multiple_element</strong></a>(list_object, indices)</dt><dd><tt>helper&nbsp;function&nbsp;which&nbsp;helps&nbsp;to&nbsp;delete&nbsp;multiple&nbsp;indexes.</tt></dd></dl>
+ <dl><dt><a name="-find_relations"><strong>find_relations</strong></a>(sub, rel, dataset)</dt><dd><tt>returns&nbsp;the&nbsp;features&nbsp;for&nbsp;the&nbsp;given&nbsp;head&nbsp;(sub).&nbsp;Also,&nbsp;rel&nbsp;is&nbsp;used&nbsp;for&nbsp;<br>
+generating&nbsp;composed&nbsp;relations.&nbsp;Fetures&nbsp;are&nbsp;chosen&nbsp;in&nbsp;a&nbsp;way&nbsp;which&nbsp;assures&nbsp;<br>
+the&nbsp;harmony&nbsp;with&nbsp;the&nbsp;underlying&nbsp;ground&nbsp;truth&nbsp;dataset.</tt></dd></dl>
+ <dl><dt><a name="-find_true_tails"><strong>find_true_tails</strong></a>(head, features_names, dataset)</dt><dd><tt>returns&nbsp;true&nbsp;tails&nbsp;from&nbsp;the&nbsp;dataset&nbsp;for&nbsp;features_names&nbsp;(relations)</tt></dd></dl>
+ <dl><dt><a name="-generate_explanations"><strong>generate_explanations</strong></a>(head, features_names, relation, tail, head_samples, dataset, model, random_forest, all_entities_number, all_relations_number)</dt><dd><tt>generate&nbsp;explanations&nbsp;for&nbsp;the&nbsp;best&nbsp;hit(tail)&nbsp;for&nbsp;(head,&nbsp;relation)&nbsp;pair.</tt></dd></dl>
+ <dl><dt><a name="-generate_samples"><strong>generate_samples</strong></a>(head, rel, tail, dataset, model, random_forest, number_of_instances)</dt><dd><tt>returns&nbsp;samples&nbsp;generated&nbsp;around&nbsp;the&nbsp;embedding&nbsp;of&nbsp;the&nbsp;head.</tt></dd></dl>
+ <dl><dt><a name="-predict_head_samples_tails_pandas"><strong>predict_head_samples_tails_pandas</strong></a>(head, features_names, head_samples, dataset, relation, model, random_forest, all_entities_number, all_relations_number)</dt><dd><tt>this&nbsp;function&nbsp;takes&nbsp;the&nbsp;relation-tails&nbsp;pair.&nbsp;For&nbsp;each&nbsp;of&nbsp;the&nbsp;relation-tails&nbsp;pair,&nbsp;<br>
+for&nbsp;all&nbsp;head&nbsp;samples&nbsp;and&nbsp;given&nbsp;relation,&nbsp;we&nbsp;calculate&nbsp;the&nbsp;most&nbsp;probable&nbsp;tail.</tt></dd></dl>
+ <dl><dt><a name="-restore_models"><strong>restore_models</strong></a>()</dt><dd><tt>returns&nbsp;restored&nbsp;TransE&nbsp;and&nbsp;CBRF&nbsp;models.</tt></dd></dl>
+</td></tr></table>
+</body></html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module TransE_model_allow_all_tails</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>TransE_model_allow_all_tails</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/data/s6jetraj/Development/TEST/CBRF-FB13-/TransE_model_allow_all_tails.py">/data/s6jetraj/Development/TEST/CBRF-FB13-/TransE_model_allow_all_tails.py</a></font></td></tr></table>
+    <p><tt>@author:&nbsp;Jelena&nbsp;Trajkovic<br>
+&nbsp;<br>
+This&nbsp;python&nbsp;file&nbsp;is&nbsp;used&nbsp;to&nbsp;define&nbsp;methods&nbsp;<br>
+needed&nbsp;for&nbsp;explanations&nbsp;generation,&nbsp;by&nbsp;using&nbsp;<br>
+slightly&nbsp;adapted&nbsp;Polleti/Cozman&nbsp;model:<br>
+allow&nbsp;model&nbsp;to&nbsp;predict&nbsp;best&nbsp;possible&nbsp;tails,<br>
+and&nbsp;introduce&nbsp;composed&nbsp;relations.</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="numpy.html">numpy</a><br>
+</td><td width="25%" valign=top><a href="train_model.html">train_model</a><br>
+</td><td width="25%" valign=top></td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#eeaa77">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt><a name="-find_head_rel_in_dataset"><strong>find_head_rel_in_dataset</strong></a>(head, rel, dataset)</dt><dd><tt>returns&nbsp;the&nbsp;tails&nbsp;already&nbsp;present&nbsp;in&nbsp;the&nbsp;train&nbsp;dataset,<br>
+for&nbsp;the&nbsp;given&nbsp;&lt;head,&nbsp;rel&gt;&nbsp;pair.</tt></dd></dl>
+ <dl><dt><a name="-get_embeddings"><strong>get_embeddings</strong></a>(relation, obj, model)</dt><dd><tt>returns&nbsp;the&nbsp;embeddings&nbsp;for&nbsp;the&nbsp;given&nbsp;relation&nbsp;and&nbsp;tail(obj).</tt></dd></dl>
+ <dl><dt><a name="-predict_best_possible_tails_TransE"><strong>predict_best_possible_tails_TransE</strong></a>(head, rel, dataset, model)</dt><dd><tt>returns&nbsp;the&nbsp;most&nbsp;plausible&nbsp;tails&nbsp;(top&nbsp;3)&nbsp;for&nbsp;the&nbsp;given&nbsp;&lt;head,&nbsp;rel&gt;&nbsp;pair,<br>
+predicted&nbsp;by&nbsp;TransE&nbsp;model.</tt></dd></dl>
+ <dl><dt><a name="-predict_best_possible_tails_TransE1"><strong>predict_best_possible_tails_TransE1</strong></a>(head, rel, dataset, model)</dt><dd><tt>returns&nbsp;the&nbsp;most&nbsp;plausible&nbsp;tails&nbsp;(top&nbsp;1)&nbsp;for&nbsp;the&nbsp;given&nbsp;&lt;head,&nbsp;rel&gt;&nbsp;pair,<br>
+predicted&nbsp;by&nbsp;TransE&nbsp;model.<br>
+REMARK:&nbsp;The&nbsp;last&nbsp;three&nbsp;functions&nbsp;can&nbsp;be&nbsp;omitted,&nbsp;by&nbsp;writing&nbsp;just&nbsp;one<br>
+which&nbsp;will&nbsp;take&nbsp;the&nbsp;number&nbsp;of&nbsp;tails&nbsp;as&nbsp;the&nbsp;argument.</tt></dd></dl>
+ <dl><dt><a name="-predict_best_possible_tails_TransE10"><strong>predict_best_possible_tails_TransE10</strong></a>(head, rel, dataset, model)</dt><dd><tt>returns&nbsp;the&nbsp;most&nbsp;plausible&nbsp;tails&nbsp;(top&nbsp;10)&nbsp;for&nbsp;the&nbsp;given&nbsp;&lt;head,&nbsp;rel&gt;&nbsp;pair,<br>
+predicted&nbsp;by&nbsp;TransE&nbsp;model.</tt></dd></dl>
+ <dl><dt><a name="-predict_best_possible_tails_TransE_for_composed_relation"><strong>predict_best_possible_tails_TransE_for_composed_relation</strong></a>(head, rel, dataset, model)</dt><dd><tt>returns&nbsp;the&nbsp;most&nbsp;plausible&nbsp;tails&nbsp;for&nbsp;the&nbsp;composed&nbsp;relation,&nbsp;by&nbsp;predicting&nbsp;the&nbsp;best<br>
+possible&nbsp;tails&nbsp;for&nbsp;the&nbsp;first&nbsp;part&nbsp;of&nbsp;the&nbsp;composed&nbsp;relation,&nbsp;and&nbsp;then,&nbsp;for&nbsp;the&nbsp;tails<br>
+predicted&nbsp;for&nbsp;the&nbsp;first&nbsp;part&nbsp;of&nbsp;the&nbsp;composed&nbsp;relation,&nbsp;using&nbsp;them&nbsp;as&nbsp;heads,&nbsp;predict<br>
+the&nbsp;best&nbsp;possible&nbsp;tails&nbsp;by&nbsp;using&nbsp;the&nbsp;second&nbsp;part&nbsp;of&nbsp;the&nbsp;composed&nbsp;relation.</tt></dd></dl>
+ <dl><dt><a name="-predict_best_possible_tails_for_relations"><strong>predict_best_possible_tails_for_relations</strong></a>(head, relations, dataset, model)</dt><dd><tt>returns&nbsp;the&nbsp;best&nbsp;possible&nbsp;tails&nbsp;for&nbsp;head&nbsp;and&nbsp;given&nbsp;relations.</tt></dd></dl>
+</td></tr></table>
+</body></html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module evaluate_both_methods</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>evaluate_both_methods</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/data/s6jetraj/Development/TEST/CBRF-FB13-/evaluate_both_methods.py">/data/s6jetraj/Development/TEST/CBRF-FB13-/evaluate_both_methods.py</a></font></td></tr></table>
+    <p><tt>@author:&nbsp;Jelena&nbsp;Trajkovic<br>
+&nbsp;<br>
+This&nbsp;file&nbsp;contains&nbsp;methods&nbsp;which&nbsp;are&nbsp;used&nbsp;for&nbsp;generating&nbsp;explanations&nbsp;for<br>
+&lt;head,&nbsp;rel,&nbsp;tail&gt;&nbsp;triple,&nbsp;by&nbsp;using&nbsp;(slightly)&nbsp;adapted&nbsp;Polleti/Cozman&nbsp;and&nbsp;TransE<br>
+model.&nbsp;The&nbsp;generated&nbsp;explanations&nbsp;are&nbsp;printed&nbsp;out,&nbsp;for&nbsp;comparasion.<br>
+In&nbsp;addition,&nbsp;Supp[tail]&nbsp;is&nbsp;calculated&nbsp;and&nbsp;printed&nbsp;out&nbsp;for&nbsp;both&nbsp;methods.<br>
+If&nbsp;You&nbsp;want&nbsp;to&nbsp;generate&nbsp;explanations&nbsp;for&nbsp;the&nbsp;triple&nbsp;in&nbsp;hand&nbsp;&lt;head,&nbsp;rel,&nbsp;tail&gt;,<br>
+You&nbsp;should&nbsp;adapt&nbsp;lines:&nbsp;156-158.</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="explain_fastai_composed.html">explain_fastai_composed</a><br>
+</td><td width="25%" valign=top><a href="generate_explanations_TransE_allow_all_tails.html">generate_explanations_TransE_allow_all_tails</a><br>
+</td><td width="25%" valign=top><a href="numpy.html">numpy</a><br>
+</td><td width="25%" valign=top><a href="train_model.html">train_model</a><br>
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#eeaa77">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt><a name="-evaluation_metric"><strong>evaluation_metric</strong></a>(exp_df, rel, tail, dataset)</dt><dd><tt>this&nbsp;method&nbsp;returns&nbsp;the&nbsp;Supp[tail]&nbsp;for&nbsp;the&nbsp;triple&nbsp;&lt;head,&nbsp;rel,&nbsp;tail&gt;&nbsp;in&nbsp;hand.</tt></dd></dl>
+ <dl><dt><a name="-explain"><strong>explain</strong></a>(head, rel, tail, dataset, model, random_forest, all_entities_number, all_relations_number)</dt><dd><tt>this&nbsp;method&nbsp;prints&nbsp;ou&nbsp;the&nbsp;generated&nbsp;explanations&nbsp;by&nbsp;using&nbsp;CBRF&nbsp;and&nbsp;(slighlty)&nbsp;adapted<br>
+Polleti/Cozman&nbsp;model.&nbsp;The&nbsp;generated&nbsp;explanations&nbsp;are&nbsp;printed&nbsp;out,&nbsp;and&nbsp;also&nbsp;written&nbsp;in<br>
+the&nbsp;html&nbsp;files:&nbsp;explanationsCBRF.html&nbsp;and&nbsp;explanationsTransE.html.<br>
+Supp[tail]&nbsp;wrt.&nbsp;both&nbsp;set&nbsp;of&nbsp;explanations&nbsp;generated,&nbsp;is&nbsp;calculated&nbsp;and&nbsp;printed&nbsp;out.</tt></dd></dl>
+ <dl><dt><a name="-find_relations"><strong>find_relations</strong></a>(sub, rel, dataset)</dt><dd><tt>Find&nbsp;all&nbsp;relations&nbsp;which&nbsp;are&nbsp;connected&nbsp;to&nbsp;the&nbsp;head(sub)&nbsp;in&nbsp;the&nbsp;ground&nbsp;truth&nbsp;dataset.&nbsp;<br>
+If&nbsp;relation&nbsp;we&nbsp;would&nbsp;like&nbsp;to&nbsp;explain&nbsp;is&nbsp;not&nbsp;there,&nbsp;add&nbsp;it&nbsp;too.</tt></dd></dl>
+</td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#55aa55">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Data</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#55aa55"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><strong>__warningregistry__</strong> = {'version': 503}<br>
+<strong>all_entities_number</strong> = {'10_downing_street': 1.332569326919233e-05, '2010_polish_air_force_tu_154_crash_site': 2.665138653838466e-05, '3_colours_red': 3.997707980757699e-05, 'a_a_fredericks': 5.330277307676932e-05, 'a_a_heaps': 6.662846634596164e-05, 'a_a_k_niazi': 7.995415961515398e-05, 'a_a_milne': 9.32798528843463e-05, 'a_atwater_kent': 0.00010660554615353864, 'a_b_a_ghani_khan_choudhury': 0.00011993123942273096, 'a_b_frost': 0.0001332569326919233, ...}<br>
+<strong>all_relations_number</strong> = {'cause_of_death': 0.07692307692307693, 'children': 0.15384615384615385, 'ethnicity': 0.23076923076923078, 'gender': 0.3076923076923077, 'institution': 0.38461538461538464, 'location': 0.46153846153846156, 'nationality': 0.5384615384615384, 'parents': 0.6153846153846154, 'place_of_birth': 0.6923076923076923, 'place_of_death': 0.7692307692307693, ...}<br>
+<strong>dataset</strong> = array([['antoine_brutus_menier', 'religion', 'ro..._edwards_1909', 'gender', 'male']], dtype=object)<br>
+<strong>exp_df</strong> =                          labels      weights
+1  ...3201
+2             ethnicity:judaism -1219.698754<br>
+<strong>exp_df_TransE</strong> =                             labels      weights
+...9
+3                    ethnicity:jew -4869.022163<br>
+<strong>model</strong> = &lt;ampligraph.latent_features.models.TransE.TransE object&gt;<br>
+<strong>random_forest</strong> = RandomForestClassifier(n_jobs=-1)</td></tr></table>
+</body></html>

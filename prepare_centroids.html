@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module prepare_centroids</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>prepare_centroids</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/data/s6jetraj/Development/TEST/CBRF-FB13-/prepare_centroids.py">/data/s6jetraj/Development/TEST/CBRF-FB13-/prepare_centroids.py</a></font></td></tr></table>
+    <p><tt>@author:&nbsp;Jelena&nbsp;Trajkovic<br>
+This&nbsp;python&nbsp;file&nbsp;contains&nbsp;methods&nbsp;for&nbsp;the&nbsp;calculation&nbsp;of&nbsp;centroids&nbsp;<br>
+of&nbsp;the&nbsp;preprocessed&nbsp;dataset.&nbsp;If&nbsp;You&nbsp;do&nbsp;not&nbsp;use&nbsp;pretrained&nbsp;model,<br>
+You&nbsp;have&nbsp;to&nbsp;generate&nbsp;dataset&nbsp;based&nbsp;on&nbsp;the&nbsp;new&nbsp;model&nbsp;and&nbsp;generate&nbsp;centroids<br>
+of&nbsp;the&nbsp;preprocessed&nbsp;dataset,&nbsp;by&nbsp;uncommenting&nbsp;the&nbsp;lines&nbsp;195-200.</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="csv.html">csv</a><br>
+<a href="dataset_generation.html">dataset_generation</a><br>
+</td><td width="25%" valign=top><a href="numpy.html">numpy</a><br>
+<a href="pandas.html">pandas</a><br>
+</td><td width="25%" valign=top><a href="train_model.html">train_model</a><br>
+</td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#eeaa77">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt><a name="-calculate_centroids"><strong>calculate_centroids</strong></a>(X, model, all_entities_number, all_relations_number)</dt><dd><tt>calculate&nbsp;the&nbsp;centroids&nbsp;of&nbsp;positive&nbsp;and&nbsp;negative&nbsp;samples&nbsp;and&nbsp;write&nbsp;into&nbsp;the&nbsp;file<br>
+FB13_centroids.csv.</tt></dd></dl>
+ <dl><dt><a name="-calculate_test_centroids"><strong>calculate_test_centroids</strong></a>(all_entities_number, all_relations_number)</dt><dd><tt>calculate&nbsp;the&nbsp;centroids&nbsp;of&nbsp;positive&nbsp;and&nbsp;negative&nbsp;samples&nbsp;and&nbsp;write&nbsp;into&nbsp;the&nbsp;file<br>
+FB13_centroids.csv.</tt></dd></dl>
+ <dl><dt><a name="-calculate_valid_centroids"><strong>calculate_valid_centroids</strong></a>(all_entities_number, all_relations_number)</dt><dd><tt>calculate&nbsp;the&nbsp;centroids&nbsp;of&nbsp;the&nbsp;validation&nbsp;dataset.&nbsp;Write&nbsp;the&nbsp;obtained&nbsp;centroids,<br>
+along&nbsp;with&nbsp;their&nbsp;labels,&nbsp;into&nbsp;the&nbsp;file&nbsp;FB13_valid_centroids.csv</tt></dd></dl>
+ <dl><dt><a name="-get_centroid"><strong>get_centroid</strong></a>(test_triple, model, all_entities_number, all_relations_number)</dt><dd><tt>we&nbsp;will&nbsp;use&nbsp;this&nbsp;function&nbsp;in&nbsp;order&nbsp;to&nbsp;calculate&nbsp;the&nbsp;unique&nbsp;centroids&nbsp;of&nbsp;the&nbsp;triples&nbsp;in&nbsp;203&nbsp;dim-space.</tt></dd></dl>
+ <dl><dt><a name="-get_centroid_fake"><strong>get_centroid_fake</strong></a>(e_fake, head, rel, tail, model, all_entities_number, all_relations_number)</dt><dd><tt>this&nbsp;function&nbsp;will&nbsp;be&nbsp;used&nbsp;to&nbsp;calculate&nbsp;the&nbsp;centroid&nbsp;of&nbsp;the&nbsp;head&nbsp;sample&nbsp;at&nbsp;hand.</tt></dd></dl>
+ <dl><dt><a name="-read_centroids"><strong>read_centroids</strong></a>()</dt></dl>
+ <dl><dt><a name="-read_centroids_with_url"><strong>read_centroids_with_url</strong></a>(url)</dt><dd><tt>return&nbsp;centroids&nbsp;read&nbsp;from&nbsp;a&nbsp;file&nbsp;with&nbsp;a&nbsp;given&nbsp;url.</tt></dd></dl>
+ <dl><dt><a name="-read_test_centroids"><strong>read_test_centroids</strong></a>()</dt></dl>
+ <dl><dt><a name="-read_test_samples_with_labels"><strong>read_test_samples_with_labels</strong></a>()</dt></dl>
+ <dl><dt><a name="-read_valid_centroids"><strong>read_valid_centroids</strong></a>()</dt></dl>
+ <dl><dt><a name="-test_samples_with_labels"><strong>test_samples_with_labels</strong></a>()</dt><dd><tt>Write&nbsp;the&nbsp;triples&nbsp;from&nbsp;the&nbsp;test&nbsp;dataset,&nbsp;along&nbsp;with&nbsp;their&nbsp;labels,&nbsp;into&nbsp;the&nbsp;file&nbsp;FB13_test_samples.csv</tt></dd></dl>
+</td></tr></table>
+</body></html>

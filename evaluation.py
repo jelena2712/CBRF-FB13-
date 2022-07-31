@@ -70,7 +70,7 @@ for i in range(len(test_true)):
     
     if test_true[i][2] in tails_rf1:
         true_rf1 = true_rf1+1
-    print("Random forest true 1.")
+   print("Random forest true 1.")
     print(test_true[i])
     print(tails_rf1)
     print(true_rf1)
@@ -79,12 +79,12 @@ for i in range(len(test_true)):
     if test_true[i][2] in tails_te10:
         true_te10 = true_te10+1
     print("Transe true 10.")
-    print(test_true[i])
+   print(test_true[i])
     print(tails_te10)
     print(true_te10)
     
     if test_true[i][2] in tails_rf10:
-        true_rf10 = true_rf10+1
+       true_rf10 = true_rf10+1
     print("Random forest true 10.")
     print(test_true[i])
     print(tails_rf10)
@@ -106,20 +106,20 @@ print(true_rf10/number_of_test_triple)
 
 f = open("Evaluation.txt", "w")
 
-f.write("Hit 1 Random Forest:\n" )
-f.write(str(true_rf1/number_of_test_triple) + "\n")
+f.write("Hit 1 Random Forest:" )
+f.write(str(true_rf1/number_of_test_triple))
 f.write("Hit 1 TransE:\n" )
-f.write(str(true_te1/number_of_test_triple) + "\n")
+f.write(str(true_te1/number_of_test_triple))
 
 f.write("Hit 3 Random Forest:\n" )
-f.write(str(true_rf/number_of_test_triple) + "\n")
+f.write(str(true_rf/number_of_test_triple))
 f.write("Hit 3 TransE:\n" )
-f.write(str(true_te/number_of_test_triple) + "\n")
+f.write(str(true_te/number_of_test_triple))
 
 f.write("Hit 10 Random Forest:\n" )
-f.write(str(true_rf10/number_of_test_triple) + "\n")
+f.write(str(true_rf10/number_of_test_triple))
 f.write("Hit 10 TransE:\n" )
-f.write(str(true_te10/number_of_test_triple) + "\n"))
+f.write(str(true_te10/number_of_test_triple))
 
 f.close()
 

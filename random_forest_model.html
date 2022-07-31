@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module random_forest_model</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>random_forest_model</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/data/s6jetraj/Development/TEST/CBRF-FB13-/random_forest_model.py">/data/s6jetraj/Development/TEST/CBRF-FB13-/random_forest_model.py</a></font></td></tr></table>
+    <p><tt>@author:&nbsp;Jelena&nbsp;Trajkovic<br>
+&nbsp;<br>
+This&nbsp;python&nbsp;file&nbsp;is&nbsp;used&nbsp;to&nbsp;define&nbsp;methods&nbsp;<br>
+needed&nbsp;for&nbsp;explanations&nbsp;generation,&nbsp;by&nbsp;using&nbsp;<br>
+CBRF&nbsp;model.</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="numpy.html">numpy</a><br>
+<a href="prepare_centroids.html">prepare_centroids</a><br>
+</td><td width="25%" valign=top><a href="pandas.html">pandas</a><br>
+<a href="pickle.html">pickle</a><br>
+</td><td width="25%" valign=top><a href="train_model.html">train_model</a><br>
+<a href="train_random_forest_fastai.html">train_random_forest_fastai</a><br>
+</td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#eeaa77">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt><a name="-find_head_rel_in_dataset"><strong>find_head_rel_in_dataset</strong></a>(head, rel, dataset)</dt></dl>
+ <dl><dt><a name="-find_rel_tail_in_dataset"><strong>find_rel_tail_in_dataset</strong></a>(rel, tail, dataset)</dt><dd><tt>returns&nbsp;the&nbsp;tails&nbsp;already&nbsp;present&nbsp;in&nbsp;the&nbsp;train&nbsp;dataset,<br>
+for&nbsp;the&nbsp;given&nbsp;&lt;head,&nbsp;rel&gt;&nbsp;pair.</tt></dd></dl>
+ <dl><dt><a name="-predict_best_possible_heads_pandas_hit10"><strong>predict_best_possible_heads_pandas_hit10</strong></a>(rel, tail, dataset, model, random_forest, all_entities_number, all_relations_number)</dt><dd><tt>returns&nbsp;the&nbsp;best&nbsp;possible&nbsp;(top&nbsp;1)&nbsp;tail&nbsp;for&nbsp;the&nbsp;given&nbsp;&lt;head,rel&gt;&nbsp;pair,&nbsp;by&nbsp;using&nbsp;CBRF&nbsp;model</tt></dd></dl>
+ <dl><dt><a name="-predict_best_possible_tails_for_relations"><strong>predict_best_possible_tails_for_relations</strong></a>(head, relations, dataset, relation, model, random_forest, all_entities_number, all_relations_number)</dt><dd><tt>predict&nbsp;best&nbsp;possible&nbsp;tails&nbsp;for&nbsp;the&nbsp;given&nbsp;head&nbsp;and&nbsp;given&nbsp;set&nbsp;of&nbsp;relations</tt></dd></dl>
+ <dl><dt><a name="-predict_best_possible_tails_pandas"><strong>predict_best_possible_tails_pandas</strong></a>(head, rel, dataset, model, random_forest, all_entities_number, all_relations_number)</dt><dd><tt>returns&nbsp;the&nbsp;best&nbsp;possible&nbsp;(top&nbsp;3)&nbsp;tails&nbsp;for&nbsp;the&nbsp;given&nbsp;&lt;head,rel&gt;&nbsp;pair,&nbsp;by&nbsp;using&nbsp;CBRF&nbsp;model.</tt></dd></dl>
+ <dl><dt><a name="-predict_best_possible_tails_pandas_hit1"><strong>predict_best_possible_tails_pandas_hit1</strong></a>(head, rel, dataset, model, random_forest, all_entities_number, all_relations_number)</dt><dd><tt>returns&nbsp;the&nbsp;best&nbsp;possible&nbsp;(top&nbsp;10)&nbsp;heads&nbsp;for&nbsp;the&nbsp;given&nbsp;&lt;rel,tail&gt;&nbsp;pair,&nbsp;by&nbsp;using&nbsp;CBRF&nbsp;model</tt></dd></dl>
+ <dl><dt><a name="-predict_best_possible_tails_pandas_hit10"><strong>predict_best_possible_tails_pandas_hit10</strong></a>(head, rel, dataset, model, random_forest, all_entities_number, all_relations_number)</dt><dd><tt>returns&nbsp;the&nbsp;best&nbsp;possible&nbsp;(top&nbsp;10)&nbsp;tails&nbsp;for&nbsp;the&nbsp;given&nbsp;&lt;head,rel&gt;&nbsp;pair,&nbsp;by&nbsp;using&nbsp;CBRF&nbsp;model.</tt></dd></dl>
+ <dl><dt><a name="-predict_best_possible_tails_true"><strong>predict_best_possible_tails_true</strong></a>(head, rel, dataset, relation, model, random_forest, all_entities_number, all_relations_number)</dt><dd><tt>predict&nbsp;best&nbsp;possible&nbsp;tails&nbsp;for&nbsp;&lt;head,relation&gt;&nbsp;pair,&nbsp;taking&nbsp;into&nbsp;account&nbsp;ground&nbsp;truth.<br>
+Only&nbsp;in&nbsp;the&nbsp;case&nbsp;of&nbsp;the&nbsp;relation&nbsp;we&nbsp;are&nbsp;explaining,&nbsp;allow&nbsp;model&nbsp;to&nbsp;predict&nbsp;3&nbsp;best&nbsp;tails<br>
+in&nbsp;order&nbsp;to&nbsp;be&nbsp;in&nbsp;harmony&nbsp;with&nbsp;model,&nbsp;delete&nbsp;the&nbsp;tails&nbsp;for&nbsp;which&nbsp;the&nbsp;model&nbsp;would&nbsp;give<br>
+probability&nbsp;less&nbsp;then&nbsp;30%.</tt></dd></dl>
+ <dl><dt><a name="-predict_tails_for_composed_relation_true"><strong>predict_tails_for_composed_relation_true</strong></a>(head, rel, dataset, relation, model, random_forest, all_entities_number, all_relations_number)</dt><dd><tt>returns&nbsp;the&nbsp;most&nbsp;plausible&nbsp;tails&nbsp;for&nbsp;the&nbsp;composed&nbsp;relation,&nbsp;by&nbsp;predicting&nbsp;the&nbsp;best<br>
+possible&nbsp;tails&nbsp;for&nbsp;the&nbsp;first&nbsp;part&nbsp;of&nbsp;the&nbsp;composed&nbsp;relation,&nbsp;and&nbsp;then,&nbsp;for&nbsp;the&nbsp;tails<br>
+predicted&nbsp;for&nbsp;the&nbsp;first&nbsp;part&nbsp;of&nbsp;the&nbsp;composed&nbsp;relation,&nbsp;using&nbsp;them&nbsp;as&nbsp;heads,&nbsp;predict<br>
+the&nbsp;best&nbsp;possible&nbsp;tails&nbsp;by&nbsp;using&nbsp;the&nbsp;second&nbsp;part&nbsp;of&nbsp;the&nbsp;composed&nbsp;relation.</tt></dd></dl>
+ <dl><dt><a name="-predict_triple_probability"><strong>predict_triple_probability</strong></a>(X_test, model, random_forest, all_entities_number, all_relations_number)</dt><dd><tt>predicts&nbsp;the&nbsp;triple's&nbsp;X_test&nbsp;probability&nbsp;by&nbsp;using&nbsp;CBRF&nbsp;model.</tt></dd></dl>
+</td></tr></table>
+</body></html>

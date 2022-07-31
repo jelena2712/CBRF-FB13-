@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module test_metric</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>test_metric</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/data/s6jetraj/Development/TEST/CBRF-FB13-/test_metric.py">/data/s6jetraj/Development/TEST/CBRF-FB13-/test_metric.py</a></font></td></tr></table>
+    <p><tt>@author:&nbsp;Jelena&nbsp;Trajkovic<br>
+&nbsp;<br>
+This&nbsp;python&nbsp;file&nbsp;is&nbsp;used&nbsp;to&nbsp;evaluate&nbsp;CBRF&nbsp;model&nbsp;and&nbsp;slightly<br>
+adapted&nbsp;Polleti/Cozman&nbsp;model&nbsp;on&nbsp;the&nbsp;test&nbsp;dataset,&nbsp;based&nbsp;on&nbsp;&nbsp;Supp[t]&nbsp;metric.&nbsp;<br>
+The&nbsp;results&nbsp;will&nbsp;be&nbsp;written&nbsp;in&nbsp;Support.txt&nbsp;file.</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="evaluate_both_methods.html">evaluate_both_methods</a><br>
+<a href="numpy.html">numpy</a><br>
+</td><td width="25%" valign=top><a href="prepare_centroids.html">prepare_centroids</a><br>
+<a href="random_forest_model.html">random_forest_model</a><br>
+</td><td width="25%" valign=top><a href="TransE_model.html">TransE_model</a><br>
+<a href="train_model.html">train_model</a><br>
+</td><td width="25%" valign=top><a href="train_random_forest_fastai.html">train_random_forest_fastai</a><br>
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#55aa55">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Data</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#55aa55"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><strong>all_entities_number</strong> = {'10_downing_street': 1.332569326919233e-05, '2010_polish_air_force_tu_154_crash_site': 2.665138653838466e-05, '3_colours_red': 3.997707980757699e-05, 'a_a_fredericks': 5.330277307676932e-05, 'a_a_heaps': 6.662846634596164e-05, 'a_a_k_niazi': 7.995415961515398e-05, 'a_a_milne': 9.32798528843463e-05, 'a_atwater_kent': 0.00010660554615353864, 'a_b_a_ghani_khan_choudhury': 0.00011993123942273096, 'a_b_frost': 0.0001332569326919233, ...}<br>
+<strong>all_relations_number</strong> = {'cause_of_death': 0.07692307692307693, 'children': 0.15384615384615385, 'ethnicity': 0.23076923076923078, 'gender': 0.3076923076923077, 'institution': 0.38461538461538464, 'location': 0.46153846153846156, 'nationality': 0.5384615384615384, 'parents': 0.6153846153846154, 'place_of_birth': 0.6923076923076923, 'place_of_death': 0.7692307692307693, ...}<br>
+<strong>dataset</strong> = array([['antoine_brutus_menier', 'religion', 'ro..._edwards_1909', 'gender', 'male']], dtype=object)<br>
+<strong>f</strong> = &lt;_io.TextIOWrapper name='Support.txt' mode='w' encoding='UTF-8'&gt;<br>
+<strong>i</strong> = 47463<br>
+<strong>model</strong> = &lt;ampligraph.latent_features.models.TransE.TransE object&gt;<br>
+<strong>num</strong> = 0<br>
+<strong>random_forest</strong> = RandomForestClassifier(n_jobs=-1)<br>
+<strong>randomf</strong> = 0<br>
+<strong>test</strong> = array([['umberto_i_of_italy', 'cause_of_death', ...religion', 'haredi_judaism', 0.0]], dtype=object)<br>
+<strong>test_true</strong> = [['umberto_i_of_italy', 'cause_of_death', 'tyrannicide'], ['john_glenn_beall_jr', 'nationality', 'united_states'], ['mike_von_erich', 'nationality', 'united_states'], ['gilbert_carlton_walker', 'nationality', 'united_states'], ['henry_john_heinz', 'nationality', 'germany'], ['ernest_lundeen', 'profession', 'politician'], ['robert_preston_1918', 'nationality', 'united_states'], ['hugo_von_mohl', 'profession', 'botanist'], ['william_grant_stairs', 'profession', 'engineer'], ['cyril_hume', 'profession', 'writer'], ['charles_pomeroy_stone', 'nationality', 'united_states'], ['hyrum_smith', 'institution', 'dartmouth_college'], ['barbara_hutton', 'cause_of_death', 'myocardial_infarction'], ['tony_hancock', 'profession', 'comedian'], ['branwell_bronte', 'ethnicity', 'irish_community_in_britain'], ['garret_hobart', 'cause_of_death', 'cardiovascular_disease'], ['wong_jim', 'profession', 'film_director'], ['thomas_elyot', 'profession', 'lexicographer'], ['carsten_olsen', 'profession', 'scientist'], ['mel_torme', 'nationality', 'united_states'], ...]<br>
+<strong>transe</strong> = 0</td></tr></table>
+</body></html>
