@@ -3,15 +3,15 @@ In order to run the python files present in this project, You have to do the fol
 
 1)Clone the repository
 
-3)If You want to use pretrained model, You have to download corresponding files given bellow
+2)If You want to use pretrained model, You have to download corresponding files given bellow
 
-4)Create the new environment by using: 
+3)Create the new environment by using: 
 
 conda create --name cbrf python=3.7
 
 conda activate cbrf
 
-5)pip install -r requirements.txt
+4)pip install -r requirements.txt
 
 The pretrained TransE and CBRF models are available and can be downloaded from the following links:
 https://drive.google.com/file/d/1bIk5VMAIWCO2s2nw_Z8of8xCNN6NyXrU/view?usp=sharing
